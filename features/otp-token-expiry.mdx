@@ -1,0 +1,21 @@
+---
+title: OTP token expiry
+description: 'How long can your tokens be valid for?'
+icon: 'circle'
+---
+
+The validity of a token can be set by passing the time in minutes to the `validity` attribute when generating a token.
+
+```bash
+curl --request POST \
+  --url https://api.fastotp.co/generate \
+  --header 'x-api-key: fastotp_xxx' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"validity": 10
+}'
+```
+
+> The OTP generated will be valid for `10 minutes`
+
+To see this in action, make a `POST` request to the `/generate` endpoint. You can read about all the parameters you can send in the [API Reference](/api-reference/generate-otp).

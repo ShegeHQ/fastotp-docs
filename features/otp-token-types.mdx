@@ -1,0 +1,24 @@
+---
+title: OTP token types
+description: 'What OTP types are supported on FastOTP?'
+icon: 'triangle'
+---
+
+* `Numeric`  - This is a type of OTP token that consists of just numeric value or just numbers
+    - **Example**: `101666`
+* `Alpha-numeric` - This is a type of OTP token that consists of both numeric and alphabetical values
+    - **Example**: `ay6l8d`
+
+```bash
+curl --request POST \
+  --url https://api.fastotp.co/generate \
+  --header 'x-api-key: fastotp_xxx' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"type": "numeric"
+}'
+```
+
+> The OTP generated will only contain numeric values
+
+To see this in action, make a `POST` request to the `/generate` endpoint. You can read about all the parameters you can send in the [API Reference](/api-reference/generate-otp).

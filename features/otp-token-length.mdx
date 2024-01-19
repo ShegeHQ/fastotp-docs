@@ -1,0 +1,21 @@
+---
+title: OTP token length
+description: 'How long can your tokens be?'
+icon: 'square'
+---
+
+With FastOTP you can customise the character count of the tokens being generate, from a minimum of `4 characters` to a maximum of `10 characters`
+
+```bash
+curl --request POST \
+  --url https://api.fastotp.co/generate \
+  --header 'x-api-key: fastotp_xxx' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"token_length": 6
+}'
+```
+
+> The OTP generated will be have `6 characters`
+
+To see this in action, make a `POST` request to the `/generate` endpoint. You can read about all the parameters you can send in the [API Reference](/api-reference/generate-otp).
