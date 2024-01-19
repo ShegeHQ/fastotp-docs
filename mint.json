@@ -1,29 +1,29 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Datkey",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+    "primary": "#09090b",
+    "light": "#EAE6E0",
+    "dark": "#18181b",
+    "background": {
+      "light": "#fafaf9",
+      "dark": "#0c0a09"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:hi@shege.tech"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://fastotp.co/dashboard"
   },
   "tabs": [
     {
@@ -31,61 +31,33 @@
       "url": "api-reference"
     }
   ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "pages": ["introduction"]
     },
     {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
+      "group": "Features",
+      "pages": ["features/otp-token-types", "features/otp-token-length", "features/otp-token-expiry"]
     },
     {
       "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
+        "api-reference/authentication",
+        "api-reference/errors"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/generate-otp",
+        "api-reference/endpoint/validate-otp",
+        "api-reference/endpoint/get-otp"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/datkeyHQ",
+    "github": "https://github.com/shegeHQ"
   }
 }
