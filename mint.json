@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Datkey",
+  "name": "FastOTP",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
