@@ -304,7 +304,7 @@
                     "id": "9b202659-fee7-46ab-836b-cdd310c4f327",
                     "identifier": "trojan",
                     "type": "alpha_numeric",
-                    "status": "pending",
+                    "status": "validated",
                     "delivery_methods": [
                       "email"
                     ],
@@ -338,7 +338,7 @@
     "/{id}": {
       "get": {
         "tags": [
-          "validate"
+          "get"
         ],
         "summary": "Validate OTP",
         "parameters": [
