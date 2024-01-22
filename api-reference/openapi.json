@@ -39,6 +39,7 @@
                     "type": "string",
                     "enum": [
                       "numeric",
+                      "alpha",
                       "alpha_numeric"
                     ],
                     "description": "token type"
